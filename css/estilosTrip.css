@@ -1,0 +1,220 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    border: none;
+    border-collapse: collapse;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Página */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height:1.3rem;
+}
+
+header{
+    background-color: white;
+    padding: 2vw 13vw 1.5vw 13vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+header img{
+ max-width:40%;
+ max-height: 72px;
+}
+
+header nav{
+    width:45%;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+nav ul li a{
+    color:#ddd;
+    text-transform: uppercase;
+    margin:0 2rem;
+}
+
+nav ul li a:hover{
+    color:rgb(134, 18, 134);
+}
+/* Form */
+main{
+    
+}
+.formularioViaje{
+    padding: 1vw 13vw 1vw 13vw;
+    background-color:rgb(134, 18, 134);
+    color: white;
+    font-size: 1.1rem;
+}
+
+.formularioViaje form{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+fieldset:first-of-type{
+    justify-content:flex-start;
+}
+
+
+
+fieldset, .lastLineForm{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
+}
+.lastLineForm{
+    justify-content:flex-end;
+}
+
+/* input[type="radio"], input[type="checkbox"]{
+    border:0px solid transparent!important;
+} */
+
+fieldset:first-of-type label{
+    margin-left:0.5rem;
+}
+
+input[type="radio"]:last-of-type{
+    margin-left: 4rem;
+}
+fieldset div{
+    margin-right:2rem;
+}
+
+
+fieldset div>label{
+    display:block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], input[type="mail"],
+select{
+    width:100%;
+    padding:0.6rem 1rem;
+}
+
+.form48{
+    width:48%;
+}
+.form100{
+    width:100%;
+}
+.form25{
+    width:25%;
+}
+.btn{
+    color:white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding:0.8rem 5rem;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 25px;
+    margin-left:5rem;
+}
+.btn:hover{
+    background-color: rgba(0,0,0,.3);
+}
+.cabecera{
+    background-image: url('../img/portada.jpg');
+    background-color:red;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding:13vw 13vw;
+}
+
+.cabecera h1{
+    background-color: rgba(0,0,0,.6);
+    color:white;
+    text-align: center;
+    font-weight:lighter;
+    padding: 1rem 3.5rem;
+}
+
+footer{
+    background-color: #999;
+    padding: 0.5vw 13vw 1vw 13vw;
+    color: white;
+}
+
+.legales, .legales ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;  
+}
+
+.legales ul li a, .idiomas ul li a{
+    color:white;
+    margin-left:3rem;
+    padding-bottom: 0.5rem;
+}
+
+.legales ul li a:hover, .idiomas ul li a:hover{
+    text-decoration: underline;
+
+}
+
+.idiomas ul{
+    width:70%;
+    margin:2rem auto;   
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.idiomas ul li {
+    display: inline-block;
+}
+
+.logoAval ul{
+    width:100%;
+    background-color: #555;
+    margin:0;
+    padding: 1vw 13vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.miniLogos{
+    max-height:30px;
+    margin:0 20px;
+}
+
+.filtrado{
+    margin:2rem auto;
+    width:70%;
+}
+.filtrado thead td{
+    border-bottom: 1px solid #ddd;
+    padding:2rem 0;
+}
+.filtrado td{
+    padding:0.5rem 1rem;
+    text-align: center;
+}

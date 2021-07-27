@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trimonster - Agencia de viajes</title>
+    <link rel="stylesheet" href="css/estilosTrip.css">
+
+    <script src="js/tripJs.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/Tripmonster-logo.png" alt="Logo tripmonster">
+        <nav>
+            <ul>
+                <li><a href="">About Tripmonster</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="formularioViaje">
+                <form action="" method="post">
+                   
+                    <fieldset>
+                        <div id="nombreF" class="form48">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="inpNombre" id="name">
+                        </div>
+                        <div id="nombreF" class="form48">
+                            <label for="lastName">Apellidos</label>
+                            <input type="text" name="inpApellidos" id="lastName">
+                        </div>    
+                    </fieldset>
+
+                    <fieldset>
+                        <div id="mailF" class="form100">
+                            <label for="email">Email</label>
+                            <input type="mail" name="inpEmail" id="email">
+                        </div>
+                        <div id="paisF" class="form48">
+                            <label for="country">Pais</label>
+                            <input type="text" name="inpPais" id="country" list="pais">
+                            <datalist id="pais">
+                                <option value="Spain">
+                                <option value="France">
+                                <option value="United Kindom">
+                                <option value="Germany">
+                                <option value="Italia">
+                            </datalist>
+                        </div> 
+                        <div id="ciudadF" class="form48">
+                            <label for="city">Ciudad</label>
+                            <input type="text" name="inpCity" id="city">
+                        </div>   
+                    </fieldset>
+
+                    <fieldset>
+                        <div id="destinoF" class="form48">
+                            <label for="destino">Destino</label>
+                            <select name="inpDestino" id="destino">
+                                <option value="canarias">Canarias</option>
+                                <option value="mallorca">Mallorca</option>
+                                <option value="galicia">Galicia</option>
+                                <option value="andalucia">Andalucia</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="lastLineForm">
+                        
+                        <div class="enviar">
+                            <input type="submit" id="btnSubmit"  class="btn" value="Enviar">
+                        </div>
+                        <div class="mostrar">
+                            <input type="button" id="btnMostrar"  class="btn" value="Show">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="resultados"></div>
+            <div class="cabecera">
+                <h1>Choose any destination in the world. We´ll take you there!</h1>
+            </div>
+            <footer>
+                <div class="legales">
+                    <img src="img/log_blanco.png" alt="Logo blanco">
+                    <ul>
+                        <li><a href="">General Conditions</a></li>
+                        <li><a href="">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="idiomas">
+                    <ul>
+                        <li><a href="">Spanish</a></li>
+                        <li><a href="">French</a></li>
+                        <li><a href="">Italian</a></li>
+                        <li><a href="">German</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <div class="logoAval">
+                <ul>
+                    <li><img src="img/iata.png" alt="" class="miniLogos"></li>
+                    <li><img src="img/amadeus.png" alt="" class="miniLogos"></li>
+                    <li><img src="img/ssl-11.png" alt="" class="miniLogos"></li>
+                </ul>
+            </div>
+
+    </main>
+</body>
+</html>
