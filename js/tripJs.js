@@ -7,7 +7,7 @@ function cargarEventos(){
 }
 
 let peticiones = [];
-peticiones = 
+/* peticiones = 
 [ {
         "name":"Juan",
         "lastName":"martinez",
@@ -32,7 +32,7 @@ peticiones =
         "city":"Bonn",
         "destino":"mallorca"
     }
-]
+] */
 
 function obtenerForm(event){
     event.preventDefault();
@@ -59,8 +59,8 @@ function obtenerForm(event){
                     "destino":destino
                 }
 
-    console.log(JSON.stringify(petic, null, '\t'));
-
+    // console.log(JSON.stringify(petic, null, '\t'));
+    alert(JSON.stringify(petic, null, '\t'));
     peticiones.push(petic);
 }
 
@@ -94,7 +94,7 @@ function printPeticionesFiltradas()
                             {
                                 misResultados +=
                                 "<td>" + canarias[i][atr] + "</td>"; 
-                                alert(canarias[i][atr]);
+                                // alert(canarias[i][atr]);
                             }
                             misResultados += "</tr>";
                         });
@@ -106,7 +106,7 @@ function printPeticionesFiltradas()
         {
             misResultados +=
             "<td>" + galicia[i][atr] + "</td>";
-            alert(galicia[i][atr]) 
+            // alert(galicia[i][atr]) 
         }
         misResultados += "</tr>";
     });
@@ -118,7 +118,7 @@ function printPeticionesFiltradas()
         {
             misResultados +=
             "<td>" + mallorca[i][atr] + "</td>";
-            alert(mallorca[i][atr]) 
+            // alert(mallorca[i][atr]) 
         }
         misResultados += "</tr>";
     });
@@ -128,8 +128,3 @@ function printPeticionesFiltradas()
     let divResultados = document.getElementById("resultados");
     divResultados.innerHTML=misResultados;
 }
-
-
-
-
-
